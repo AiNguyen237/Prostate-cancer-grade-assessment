@@ -1,5 +1,5 @@
 # Prostate Cancer Grade Assessment
-Using GANs to detect cancerous regions from prostate cancer biopsy images.
+
 
 ## Introduction
 With more than 1 million new diagnoses reported every year, prostate cancer (PCa) is the second most common cancer among males worldwide that results in more than 350,000 deaths annually. The key to decreasing mortality is developing more precise diagnostics. Diagnosis of PCa is based on the grading of prostate tissue biopsies. These tissue samples are examined by a pathologist and scored according to the Gleason grading system.This repository is an attempt to deploy Pix2Pix for highlighting cancerous region on images of prostate tissue samples, and estimate severity of the disease using OpenCV.

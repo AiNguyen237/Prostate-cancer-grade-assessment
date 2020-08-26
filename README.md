@@ -53,3 +53,5 @@ This file is responsible for predicting the labels for the input data.
 ### [Preprocess.py](https://github.com/AiNguyen237/Prostate-cancer-grade-assessment/blob/master/preprocess.py)
 This file is responsible for preprocessing the input data.
 
+### [Model_2.py](https://github.com/AiNguyen237/Prostate-cancer-grade-assessment/blob/master/model_2.py)
+This file is responsible for implementing the Pix2Pix model.

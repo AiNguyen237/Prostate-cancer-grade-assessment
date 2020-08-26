@@ -1,5 +1,5 @@
 # Prostate Cancer Grade Assessment
-Using GANs to detect cancerous regions from prostate cancer biopsy images.
+
 
 ## Introduction
 With more than 1 million new diagnoses reported every year, prostate cancer (PCa) is the second most common cancer among males worldwide that results in more than 350,000 deaths annually. The key to decreasing mortality is developing more precise diagnostics. Diagnosis of PCa is based on the grading of prostate tissue biopsies. These tissue samples are examined by a pathologist and scored according to the Gleason grading system.This repository is an attempt to deploy Pix2Pix for highlighting cancerous region on images of prostate tissue samples, and estimate severity of the disease using OpenCV.
@@ -35,3 +35,21 @@ We will follow the same training procedure outlined in [Pix2Pix](https://github.
 The image on the left is a biopsy image, the image in the middle is a referenced mask image provided by the data provider, the right image is the model-generated image.
 
 ## File Structure 
+### [Change-to-png.py](https://github.com/AiNguyen237/Prostate-cancer-grade-assessment/blob/master/change_to_png.py)
+This file is responsible for changing all the images from tiff format into png. This file also contains solution to the mask images problem. 
+
+### [Remove_extra_imgs.py](https://github.com/AiNguyen237/Prostate-cancer-grade-assessment/blob/master/remove_extra_imgs.py)
+This file is reponsible for removing all extra biopsy images that doesn't have a corresponding mask image.
+
+### [Clean_up_white_img.py](https://github.com/AiNguyen237/Prostate-cancer-grade-assessment/blob/master/clean_up_white_img.py)
+This file is reponsible for filtering out all-white or all-black images.
+
+### [Helper_functions.py](https://github.com/AiNguyen237/Prostate-cancer-grade-assessment/blob/master/helper_functions.py)
+This file is responsible for defining all miscellaneous helper functions.
+
+### [Predict.py](https://github.com/AiNguyen237/Prostate-cancer-grade-assessment/blob/master/predict.py)
+This file is responsible for predicting the labels for the input data.
+
+### [Preprocess.py](https://github.com/AiNguyen237/Prostate-cancer-grade-assessment/blob/master/preprocess.py)
+This file is responsible for preprocessing the input data.
+
